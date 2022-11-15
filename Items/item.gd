@@ -2,18 +2,19 @@ extends Sprite
 class_name Item
 
 export var item_name:String
-export var spawn_width: int
-export(Curve) var spawn_frequency
-export(int) var max_count: int
+export var spawn_width: int = 2000
+export(int) var max_count: int = 5
 
 export(NodePath) onready var area2d = get_node(area2d) as Area2D
 export(Curve) var attractor_curve
 export(float) var pick_up_distance = 5
 
 func _ready():
-	randomize()
-	self.position.x = Random.randfn(0.25, .8) * spawn_width
-	self.position.y = randi() % int(OS.get_screen_size(-1).y)
+	randomize_position()
+
+func randomize_position():
+	self.position.x = Random.randfn(0.5, .25) * spawn_width + 300
+	self.position.y = randi() % 500 + 100
 
 func _process(delta):
 	for area in area2d.get_overlapping_areas():
@@ -29,5 +30,6 @@ func attract(area, _delta):
 	self.position = move_vector
 
 func pick_up():
-	queue_free()
+	get_parent().remove_child(self)
 	GameEvents.emit_signal("item_picked_up", self)
+

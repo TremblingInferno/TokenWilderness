@@ -15,9 +15,7 @@ radius = 50.0
 [node name="Item" type="Sprite"]
 texture = ExtResource( 2 )
 script = ExtResource( 1 )
-spawn_width = 2000
 spawn_frequency = SubResource( 3 )
-max_count = 30
 area2d = NodePath("Area2D")
 attractor_curve = SubResource( 2 )
 
