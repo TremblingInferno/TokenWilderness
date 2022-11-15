@@ -23,11 +23,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="599.27513"
-     inkscape:cy="934.44517"
+     inkscape:zoom="1.4"
+     inkscape:cx="213.7847"
+     inkscape:cy="-130.61284"
      inkscape:document-units="mm"
-     inkscape:current-layer="g845"
+     inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:window-width="1366"
@@ -54,7 +54,8 @@
     <g
        id="g924"
        inkscape:export-xdpi="40"
-       inkscape:export-ydpi="40">
+       inkscape:export-ydpi="40"
+       transform="translate(-50.518117,-139.90307)">
       <circle
          style="fill:#003402;fill-opacity:1;stroke-width:0.264583"
          id="circle853"
@@ -64,7 +65,7 @@
          inkscape:export-xdpi="96"
          inkscape:export-ydpi="96" />
       <circle
-         style="fill:#00ae06;stroke-width:0.264583;fill-opacity:1"
+         style="fill:#00ae06;fill-opacity:1;stroke-width:0.264583"
          id="path833"
          cx="74.384537"
          cy="48.336655"
@@ -79,7 +80,8 @@
          inkscape:export-ydpi="96" />
     </g>
     <g
-       id="g930">
+       id="g930"
+       transform="translate(-50.518117,-139.90307)">
       <circle
          style="fill:#003402;fill-opacity:1;stroke-width:0.264583"
          id="circle911"
@@ -146,6 +148,38 @@
            id="path858"
            sodipodi:nodetypes="csssscccc" />
       </g>
+    </g>
+    <g
+       id="g851"
+       inkscape:export-xdpi="40"
+       inkscape:export-ydpi="40"
+       transform="translate(-50.518117,-87.965084)"
+       inkscape:export-filename="/home/kyriekurzweg1/Documents/godot/TokenWilderness/Items/ItemTextures/stick_inventory.png">
+      <path
+         style="fill:#845500;fill-opacity:1;stroke:none;stroke-width:0.337336;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 66.618251,62.10684 18.518999,-25.862742 -2.849384,-1.524034 -9.473799,11.266293 -0.394053,-4.721948 -3.320847,0.253176 0.461497,7.543092 -7.51485,9.791763 z"
+         id="path849"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+    </g>
+    <g
+       id="g863"
+       transform="translate(-50.518117,-87.965084)"
+       inkscape:export-filename="/home/kyriekurzweg1/Documents/godot/TokenWilderness/Items/ItemTextures/stone_inventory.png"
+       inkscape:export-xdpi="40"
+       inkscape:export-ydpi="40">
+      <path
+         style="fill:#453f34;fill-opacity:1;stroke:none;stroke-width:0.356378px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 121.28941,53.133733 h 18.90122 c 0,0 -1.78311,-12.384718 -8.64484,-12.38753 -6.86172,-0.0028 -10.25638,12.38753 -10.25638,12.38753 z"
+         id="path859"
+         inkscape:export-xdpi="40"
+         inkscape:export-ydpi="40" />
+      <path
+         style="fill:#453f34;fill-opacity:1;stroke:none;stroke-width:0.356378px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 138.07327,52.327183 h 7.03608 c 0,0 -0.27643,-4.904671 -3.22671,-4.828852 -2.95026,0.07582 -3.80937,4.828852 -3.80937,4.828852 z"
+         id="path861"
+         inkscape:export-xdpi="40"
+         inkscape:export-ydpi="40" />
     </g>
   </g>
 </svg>

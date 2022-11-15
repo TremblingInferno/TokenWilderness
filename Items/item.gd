@@ -2,6 +2,8 @@ extends Sprite
 class_name Item
 
 export var item_name:String
+export(Texture) var inventory_texture
+
 export var spawn_width: int = 2000
 export(int) var max_count: int = 5
 
