@@ -4,6 +4,7 @@ class_name Item
 export var item_name:String
 export(NodePath) onready var area2d = get_node(area2d) as Area2D
 export(Curve) var attractor_curve
+export(float) var pick_up_distance = 5
 
 func _process(delta):
 	for area in area2d.get_overlapping_areas():
@@ -12,7 +13,7 @@ func _process(delta):
 
 func attract(area, _delta):
 	var diff = area.global_position - self.global_position
-	if diff.length() < 0.1:
+	if diff.length() < pick_up_distance:
 		pick_up()
 		return
 	var move_vector = lerp(self.global_position, area.global_position, attractor_curve.interpolate(1/diff.length()))
