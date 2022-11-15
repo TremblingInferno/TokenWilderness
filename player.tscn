@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://icon.png" type="Texture" id=1]
 [ext_resource path="res://player.gd" type="Script" id=2]
@@ -11,6 +11,9 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="CircleShape2D" id=2]
+radius = 1.0
+
 [node name="Player" type="AnimatedSprite"]
 frames = SubResource( 1 )
 script = ExtResource( 2 )
@@ -20,3 +23,8 @@ camera = NodePath("Camera2D")
 current = true
 limit_top = 0
 limit_bottom = 0
+
+[node name="MagentArea" type="Area2D" parent="." groups=["Player"]]
+
+[node name="PickupRadius" type="CollisionShape2D" parent="MagentArea"]
+shape = SubResource( 2 )
