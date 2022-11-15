@@ -10,6 +10,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+item = NodePath("Item")
 
 [node name="EmptySlot" type="TextureRect" parent="."]
 margin_right = 79.0

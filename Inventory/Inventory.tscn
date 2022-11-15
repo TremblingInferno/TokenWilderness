@@ -3,9 +3,6 @@
 [ext_resource path="res://Inventory/Inventory.gd" type="Script" id=1]
 
 [node name="Inventory" type="HBoxContainer"]
-margin_right = 40.0
-margin_bottom = 40.0
-rect_scale = Vector2( 25.5716, 2.53307 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
