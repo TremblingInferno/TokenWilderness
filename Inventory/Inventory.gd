@@ -10,10 +10,13 @@ var inventory:Array = []
 
 func _ready():
 	GameEvents.connect("item_picked_up", self, "add_item_slot")
+	create_empty_inventory()
+	
 
 func create_empty_inventory():
 	for i in max_items:
 		var inv = inventory_slot.instance()
+		add_child(inv)
 		
 
 func add_item_slot(item):

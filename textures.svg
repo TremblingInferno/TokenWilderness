@@ -13,7 +13,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
-   sodipodi:docname="textures.svg">
+   sodipodi:docname="textures.svg"
+   inkscape:export-filename="/home/kyriekurzweg1/Documents/godot/TokenWilderness/Assets/inventory_slot.png"
+   inkscape:export-xdpi="40"
+   inkscape:export-ydpi="40">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -23,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="213.7847"
-     inkscape:cy="-130.61284"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="622.81907"
+     inkscape:cy="-158.74974"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -51,6 +54,26 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <g
+       id="g864"
+       inkscape:export-filename="/home/kyriekurzweg1/Documents/godot/TokenWilderness/Assets/inventory_slot.png"
+       inkscape:export-xdpi="40"
+       inkscape:export-ydpi="40">
+      <rect
+         style="fill:#a8893f;fill-opacity:1;stroke-width:0.264999"
+         id="rect859"
+         width="50.299622"
+         height="50.299622"
+         x="156.52939"
+         y="-66.161339" />
+      <rect
+         style="fill:#cab073;fill-opacity:1;stroke-width:0.166973"
+         id="rect857"
+         width="34.691101"
+         height="34.691101"
+         x="164.33365"
+         y="-58.357079" />
+    </g>
     <g
        id="g924"
        inkscape:export-xdpi="40"
@@ -178,6 +201,25 @@
          style="fill:#453f34;fill-opacity:1;stroke:none;stroke-width:0.356378px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          d="m 138.07327,52.327183 h 7.03608 c 0,0 -0.27643,-4.904671 -3.22671,-4.828852 -2.95026,0.07582 -3.80937,4.828852 -3.80937,4.828852 z"
          id="path861"
+         inkscape:export-xdpi="40"
+         inkscape:export-ydpi="40" />
+    </g>
+    <g
+       id="g855"
+       transform="translate(0.29648541,-88.152668)"
+       inkscape:export-filename="/home/kyriekurzweg1/Documents/godot/TokenWilderness/Items/ItemTextures/stone_inventory.png"
+       inkscape:export-xdpi="40"
+       inkscape:export-ydpi="40">
+      <path
+         style="fill:#453f34;fill-opacity:1;stroke:none;stroke-width:0.356378px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 121.28941,53.133733 h 18.90122 c 0,0 -1.78311,-12.384718 -8.64484,-12.38753 -6.86172,-0.0028 -10.25638,12.38753 -10.25638,12.38753 z"
+         id="path850"
+         inkscape:export-xdpi="40"
+         inkscape:export-ydpi="40" />
+      <path
+         style="fill:#453f34;fill-opacity:1;stroke:none;stroke-width:0.356378px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 138.07327,52.327183 h 7.03608 c 0,0 -0.27643,-4.904671 -3.22671,-4.828852 -2.95026,0.07582 -3.80937,4.828852 -3.80937,4.828852 z"
+         id="path852"
          inkscape:export-xdpi="40"
          inkscape:export-ydpi="40" />
     </g>
