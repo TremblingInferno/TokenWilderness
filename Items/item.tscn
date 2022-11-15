@@ -1,10 +1,7 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Items/item.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
-
-[sub_resource type="Curve" id=3]
-_data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.0442943, 0.365031 ), 6.12884, 6.12884, 0, 0, Vector2( 1, 1 ), 8.67004, 0.0, 0, 0 ]
 
 [sub_resource type="Curve" id=2]
 _data = [ Vector2( 0, 0.315951 ), 0.0, 0.186628, 0, 0, Vector2( 1, 1 ), 2.01969, 0.0, 0, 0 ]
@@ -15,7 +12,6 @@ radius = 50.0
 [node name="Item" type="Sprite"]
 texture = ExtResource( 2 )
 script = ExtResource( 1 )
-spawn_frequency = SubResource( 3 )
 area2d = NodePath("Area2D")
 attractor_curve = SubResource( 2 )
 
