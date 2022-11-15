@@ -2,12 +2,14 @@ extends AnimatedSprite
 
 var velocity:Vector2 = Vector2(0,0)
 export(int) var speed = 200
+export(NodePath) onready var camera = get_node(camera)
 
 var vertical_movement
 var horizontal_movement
 
 func _process(delta):
-	self.translate(speed * velocity.normalized() * delta)
+	var translation = speed * velocity.normalized() * delta
+	self.translate(translation)
 	handle_input()
 
 
