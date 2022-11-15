@@ -8,11 +8,25 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Sprite",
+"class": "Item",
+"language": "GDScript",
+"path": "res://Items/item.gd"
+} ]
+_global_script_class_icons={
+"Item": ""
+}
+
 [application]
 
 config/name="Token Wilderness"
 run/main_scene="res://main.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+GameEvents="*res://Singletons/game_events.gd"
 
 [input]
 
