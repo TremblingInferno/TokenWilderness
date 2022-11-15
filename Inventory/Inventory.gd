@@ -21,7 +21,11 @@ func create_empty_inventory():
 
 func add_item_slot(item):
 	var slot = get_next_open_slot()
-	slot.item.texture = item.inventory_texture
+	if slot:
+		slot.set_item(item)
 
 func get_next_open_slot():
-	return get_children()[0]
+	for slot in get_children():
+		if !slot.is_full():
+			return slot
+	return 0
