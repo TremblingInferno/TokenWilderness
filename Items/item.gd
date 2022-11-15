@@ -5,7 +5,7 @@ export var item_name:String
 export(Texture) var inventory_texture
 
 export var spawn_width: int = 2000
-export(int) var max_count: int = 5
+export(int) var max_count: int = 10
 
 export(NodePath) onready var area2d = get_node(area2d) as Area2D
 export(Curve) var attractor_curve

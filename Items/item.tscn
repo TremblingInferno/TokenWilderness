@@ -7,11 +7,12 @@
 _data = [ Vector2( 0, 0.315951 ), 0.0, 0.186628, 0, 0, Vector2( 1, 1 ), 2.01969, 0.0, 0, 0 ]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 50.0
+radius = 75.0
 
 [node name="Item" type="Sprite"]
 texture = ExtResource( 2 )
 script = ExtResource( 1 )
+max_count = 5
 area2d = NodePath("Area2D")
 attractor_curve = SubResource( 2 )
 

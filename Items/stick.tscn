@@ -8,3 +8,4 @@
 texture = ExtResource( 2 )
 item_name = "Stick"
 inventory_texture = ExtResource( 3 )
+max_count = 5
