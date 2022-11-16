@@ -10,5 +10,5 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 recipes = [ ExtResource( 2 ) ]
-crafting_item = ExtResource( 3 )
+crafting_item_gui = ExtResource( 3 )
 vbox = NodePath(".")

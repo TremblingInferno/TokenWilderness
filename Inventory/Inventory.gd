@@ -21,7 +21,7 @@ func create_empty_inventory():
 func add_item_slot(item):
 	var slot = get_next_open_slot()
 	if slot:
-		inventory.append(item.item_resource)
+		inventory.append(item)
 		slot.set_item(item)
 		if self.is_full():
 			GameEvents.emit_signal("inventory_full")

@@ -1,7 +1,6 @@
 extends Item
 
 export var spawn_width: int = 2000
-export(int) var max_count: int = 10
 
 export(NodePath) onready var area2d = get_node(area2d) as Area2D
 export(Curve) var attractor_curve
@@ -38,8 +37,8 @@ func attract(area, _delta):
 
 
 func pick_up():
-	get_parent().remove_child(self)
-	GameEvents.emit_signal("item_picked_up", self)
+	queue_free()
+	GameEvents.emit_signal("item_picked_up", item_resource)
 
 
 func stop_collection():
