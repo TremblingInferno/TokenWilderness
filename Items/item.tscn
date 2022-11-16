@@ -15,6 +15,7 @@ script = ExtResource( 1 )
 max_count = 5
 area2d = NodePath("Area2D")
 attractor_curve = SubResource( 2 )
+pick_up_distance = 20.0
 
 [node name="Area2D" type="Area2D" parent="."]
 

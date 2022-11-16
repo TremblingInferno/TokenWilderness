@@ -1,8 +1,5 @@
 extends HBoxContainer
 
-signal inventory_full
-signal item_removed
-
 export(String) onready var inventory_slot = load(inventory_slot) as PackedScene
 export var max_items = 4
 
@@ -25,7 +22,10 @@ func add_item_slot(item):
 		slot.set_item(item)
 
 func get_next_open_slot():
-	for slot in get_children():
-		if !slot.is_full():
-			return slot
+	var slots = get_children()
+	for i in max_items:
+		if i == max_items-1:
+			GameEvents.emit_signal("inventory_full")
+		if !slots[i].is_full():
+			return slots[i]
 	return 0

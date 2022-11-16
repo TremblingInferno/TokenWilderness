@@ -7,4 +7,3 @@
 [node name="Stone" instance=ExtResource( 1 )]
 texture = ExtResource( 2 )
 inventory_texture = ExtResource( 3 )
-max_count = 5

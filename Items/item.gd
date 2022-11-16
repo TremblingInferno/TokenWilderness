@@ -11,7 +11,10 @@ export(NodePath) onready var area2d = get_node(area2d) as Area2D
 export(Curve) var attractor_curve
 export(float) var pick_up_distance = 5
 
+var inventory_full := false
+
 func _ready():
+	GameEvents.connect("inventory_full", self, "stop_collection")
 	randomize_position()
 
 func randomize_position():
@@ -19,6 +22,8 @@ func randomize_position():
 	self.position.y = randi() % 500 + 100
 
 func _process(delta):
+	if inventory_full:
+		return
 	for area in area2d.get_overlapping_areas():
 		if area.is_in_group("Player"):
 			attract(area, delta)
@@ -35,3 +40,6 @@ func pick_up():
 	get_parent().remove_child(self)
 	GameEvents.emit_signal("item_picked_up", self)
 
+
+func stop_collection():
+	inventory_full = true
