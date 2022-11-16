@@ -26,3 +26,5 @@ margin_left = 39.0
 margin_top = 39.0
 margin_right = 39.0
 margin_bottom = 39.0
+
+[connection signal="gui_input" from="." to="." method="_on_CenterContainer_gui_input"]

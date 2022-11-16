@@ -32,6 +32,7 @@ position = Vector2( 41, -0.400005 )
 [node name="ItemSpawner" type="Node2D" parent="Scrolling"]
 script = ExtResource( 2 )
 spawn_items = [ ExtResource( 4 ), ExtResource( 5 ) ]
+player = NodePath("../../Player")
 
 [node name="Player" parent="." instance=ExtResource( 8 )]
 
