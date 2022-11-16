@@ -20,10 +20,15 @@ recipe_item_gui = ExtResource( 2 )
 [node name="HBoxContainer" type="HSplitContainer" parent="."]
 margin_right = 40.0
 margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Item" type="TextureRect" parent="HBoxContainer"]
 margin_right = 64.0
 margin_bottom = 64.0
+mouse_filter = 2
 texture = ExtResource( 3 )
 stretch_mode = 3
 __meta__ = {
@@ -34,6 +39,7 @@ __meta__ = {
 margin_left = 76.0
 margin_right = 76.0
 margin_bottom = 64.0
+mouse_filter = 2
 size_flags_stretch_ratio = 0.41
 __meta__ = {
 "_edit_use_anchors_": false
