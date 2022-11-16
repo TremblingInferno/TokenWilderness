@@ -62,5 +62,10 @@ __meta__ = {
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 91.0
+margin_right = 91.0
 
 [node name="CraftingMenu" parent="NotScrolling/UI" instance=ExtResource( 9 )]
+margin_top = 126.0
+margin_bottom = 166.0
+rect_scale = Vector2( 4.06241, 9.01076 )

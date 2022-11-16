@@ -4,8 +4,8 @@
 [ext_resource path="res://Crafting/recipe_item.tscn" type="PackedScene" id=2]
 
 [node name="CraftingItem" type="Control"]
-margin_right = 40.0
-margin_bottom = 40.0
+anchor_right = 1.0
+anchor_bottom = 1.0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -17,15 +17,13 @@ recipe_item = ExtResource( 2 )
 [node name="hBox" type="HSplitContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_right = 12.0
 dragger_visibility = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Item" type="TextureRect" parent="hBox"]
-margin_bottom = 40.0
 
 [node name="CraftWith" type="HBoxContainer" parent="hBox"]
-margin_left = 12.0
-margin_right = 40.0
-margin_bottom = 40.0
+size_flags_stretch_ratio = 0.41

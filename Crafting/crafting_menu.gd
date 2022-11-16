@@ -1,4 +1,4 @@
-extends TextureRect
+extends Control
 
 export(Array, Resource) var recipes
 export(PackedScene) var crafting_item
@@ -11,6 +11,6 @@ func _ready():
 func instantiate_recipes():
 	for recipe in recipes:
 		var ci = crafting_item.instance()
-		ci.set_up_item(recipe)
 		vbox.add_child(ci)
+		ci.set_up_item(recipe)
 
