@@ -19,6 +19,7 @@ func drop_item():
 	if token_item:
 		full = false
 		GameEvents.emit_signal("dropped_item", token_item)
+		GameEvents.emit_signal("inventory_not_full")
 		token_item = ''
 		item.texture = null
 

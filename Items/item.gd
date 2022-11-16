@@ -14,6 +14,7 @@ export(float) var pick_up_distance = 5
 var inventory_full := false
 
 func _ready():
+	GameEvents.connect("inventory_not_full", self, "start_collection")
 	GameEvents.connect("inventory_full", self, "stop_collection")
 	randomize_position()
 
@@ -43,3 +44,6 @@ func pick_up():
 
 func stop_collection():
 	inventory_full = true
+
+func start_collection():
+	inventory_full = false
