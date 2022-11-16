@@ -4,19 +4,11 @@
 [ext_resource path="res://Crafting/recipes/spear_recipe.tres" type="Resource" id=2]
 [ext_resource path="res://Crafting/crafting_item.tscn" type="PackedScene" id=3]
 
-[node name="CraftingMenu" type="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="VBoxContainer" type="HBoxContainer"]
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 recipes = [ ExtResource( 2 ) ]
 crafting_item = ExtResource( 3 )
-vbox = NodePath("VBoxContainer")
-
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
+vbox = NodePath(".")

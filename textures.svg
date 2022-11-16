@@ -26,9 +26,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="693.462"
-     inkscape:cy="-289.22872"
+     inkscape:zoom="0.7"
+     inkscape:cx="1106.5052"
+     inkscape:cy="-451.17406"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -255,6 +255,27 @@
          d="m 123.28756,47.253127 7.69507,-8.078783 -10.12877,-1.312899 z"
          id="path877"
          sodipodi:nodetypes="cccc" />
+    </g>
+    <g
+       id="g866"
+       inkscape:export-filename="/home/kyriekurzweg1/Documents/godot/TokenWilderness/Assets/crafting_slot.png"
+       inkscape:export-xdpi="40"
+       inkscape:export-ydpi="40"
+       transform="matrix(4.1895504,0,0,1,-474.30455,-94.947324)">
+      <rect
+         style="fill:#a8893f;fill-opacity:1;stroke-width:0.245428"
+         id="rect862"
+         width="46.584785"
+         height="46.584785"
+         x="152.6017"
+         y="-63.561253" />
+      <rect
+         style="fill:#cab073;fill-opacity:1;stroke-width:0.179234"
+         id="rect864"
+         width="43.160023"
+         height="32.129017"
+         x="154.31409"
+         y="-56.333374" />
     </g>
   </g>
 </svg>
