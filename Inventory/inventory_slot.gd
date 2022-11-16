@@ -17,7 +17,6 @@ func is_full():
 func drop_item():
 	if item_resource:
 		GameEvents.emit_signal("dropped_item", item_resource)
-		GameEvents.emit_signal("inventory_not_full")
 		remove_item()
 
 
@@ -25,7 +24,9 @@ func _on_CenterContainer_gui_input(event:InputEvent):
 	if event is InputEventMouse and event.is_pressed():
 		drop_item()
 
+
 func remove_item():
+	GameEvents.emit_signal("inventory_not_full")
 	full = false
 	item_resource = null
 	item_gui.texture = null
