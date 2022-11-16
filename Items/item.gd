@@ -18,9 +18,11 @@ func _ready():
 	GameEvents.connect("inventory_full", self, "stop_collection")
 	randomize_position()
 
+
 func randomize_position():
 	self.position.x = Random.randfn(0.5, .25) * spawn_width + 300
 	self.position.y = randi() % 500 + 100
+
 
 func _process(delta):
 	if inventory_full:
@@ -28,6 +30,7 @@ func _process(delta):
 	for area in area2d.get_overlapping_areas():
 		if area.is_in_group("Player"):
 			attract(area, delta)
+
 
 func attract(area, _delta):
 	var diff = area.global_position - self.global_position

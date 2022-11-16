@@ -37,6 +37,7 @@ func _on_MagentArea_area_entered(area:Area2D):
 	if area.is_in_group("Home"):
 		GameEvents.emit_signal("entered_home")
 
+
 func _on_MagentArea_area_exited(area:Area2D):
 	if area.is_in_group("Home"):
 		GameEvents.emit_signal("exited_home")

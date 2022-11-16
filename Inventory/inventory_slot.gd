@@ -3,7 +3,6 @@ extends CenterContainer
 var full:bool = false
 export(NodePath) onready var item = get_node(item)
 var token_item
-var qty
 
 func set_item(_item):
 	token_item = _item
