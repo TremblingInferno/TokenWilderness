@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://Items/item.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://Items/ItemResources/stick.tres" type="Resource" id=2]
+[ext_resource path="res://Items/Pickupable_items/pickupable_item.gd" type="Script" id=3]
 
 [sub_resource type="Curve" id=2]
 _data = [ Vector2( 0, 0.315951 ), 0.0, 0.186628, 0, 0, Vector2( 1, 1 ), 2.01969, 0.0, 0, 0 ]
@@ -10,8 +11,9 @@ _data = [ Vector2( 0, 0.315951 ), 0.0, 0.186628, 0, 0, Vector2( 1, 1 ), 2.01969,
 radius = 75.0
 
 [node name="Item" type="Sprite"]
-texture = ExtResource( 2 )
-script = ExtResource( 1 )
+texture = ExtResource( 1 )
+script = ExtResource( 3 )
+item_resource = ExtResource( 2 )
 max_count = 5
 area2d = NodePath("Area2D")
 attractor_curve = SubResource( 2 )

@@ -1,0 +1,9 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Items/Pickupable_items/pickupable_item.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Items/ItemTextures/stones.png" type="Texture" id=2]
+[ext_resource path="res://Items/ItemResources/stone.tres" type="Resource" id=3]
+
+[node name="Stone" instance=ExtResource( 1 )]
+texture = ExtResource( 2 )
+item_resource = ExtResource( 3 )
