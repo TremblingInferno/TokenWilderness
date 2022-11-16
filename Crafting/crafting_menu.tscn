@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Crafting/crafting_menu.gd" type="Script" id=1]
 [ext_resource path="res://Crafting/recipes/spear_recipe.tres" type="Resource" id=2]
-[ext_resource path="res://Crafting/crafting_item.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Crafting/crafting_item_gui.tscn" type="PackedScene" id=3]
 
 [node name="VBoxContainer" type="HBoxContainer"]
 script = ExtResource( 1 )

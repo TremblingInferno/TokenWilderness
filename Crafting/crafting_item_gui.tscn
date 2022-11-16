@@ -13,9 +13,9 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-item = NodePath("HBoxContainer/Item")
-recipe = NodePath("HBoxContainer/CraftWith")
-recipe_item = ExtResource( 2 )
+item_gui = NodePath("HBoxContainer/Item")
+recipe_gui = NodePath("HBoxContainer/CraftWith")
+recipe_item_gui = ExtResource( 2 )
 
 [node name="HBoxContainer" type="HSplitContainer" parent="."]
 margin_right = 40.0
