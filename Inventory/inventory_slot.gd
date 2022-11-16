@@ -21,7 +21,7 @@ func drop_item():
 
 
 func _on_CenterContainer_gui_input(event:InputEvent):
-	if event is InputEventMouse and event.is_pressed():
+	if event is InputEventMouseButton and event.doubleclick:
 		drop_item()
 
 
