@@ -9,6 +9,7 @@ var item_number = 0
 func _ready():
 	GameEvents.connect("item_picked_up", self, "add_item_slot")
 	GameEvents.connect("dropped_item", self, "remove_item")
+	GameEvents.connect("item_removed", self, "remove_item")
 	create_empty_inventory()
 
 
@@ -41,4 +42,8 @@ func is_full():
 
 func remove_item(_item):
 	if _item:
-		inventory.erase(_item)
+		for slot in get_children():
+			if slot.item_resource == _item:
+				slot.remove_item()
+				break
+	inventory.erase(_item)

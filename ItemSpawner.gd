@@ -7,7 +7,7 @@ export(NodePath) onready var player = get_node(player)
 export(int) var max_count: int = 10
 
 func _ready():
-	GameEvents.connect("item_removed", self, "respawn_object")
+	GameEvents.connect("item_removed", self, "spawn_object")
 	GameEvents.connect("dropped_item", self, "drop_item")
 	spawn_objects()
 
@@ -29,11 +29,6 @@ func drop_item(item_resource):
 	var item = spawn_object(item_resource)
 	item.position = player.position + Random2D.point_in_circle(80, 100)
 
-
-func respawn_object(object):
-	object.randomize_position()
-	add_child(object)
-	
 
 func _on_ItemSpawner_finished():
 	pass

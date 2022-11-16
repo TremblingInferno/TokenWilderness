@@ -26,6 +26,8 @@ func _on_CraftingItem_gui_input(event:InputEvent):
 
 func craft_item():
 	if has_items():
+		for item in required_items:
+			GameEvents.emit_signal("item_removed", item)
 		GameEvents.emit_signal("item_picked_up", craftable_item)
 
 
