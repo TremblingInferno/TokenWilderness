@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Crafting/crafting_item.gd" type="Script" id=1]
-[ext_resource path="res://Crafting/recipe_item.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Crafting/crafting_item_gui.gd" type="Script" id=1]
+[ext_resource path="res://Crafting/recipe_item_gui.tscn" type="PackedScene" id=2]
 [ext_resource path="res://icon.png" type="Texture" id=3]
 [ext_resource path="res://Assets/crafting_slot.png" type="Texture" id=4]
 
@@ -38,3 +38,5 @@ size_flags_stretch_ratio = 0.41
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[connection signal="gui_input" from="." to="." method="_on_CraftingItem_gui_input"]
