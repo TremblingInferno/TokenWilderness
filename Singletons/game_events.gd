@@ -6,6 +6,7 @@ signal item_removed(item)
 
 signal inventory_full
 signal inventory_not_full
+signal deselected_inventory
 
 signal entered_home
 signal exited_home
