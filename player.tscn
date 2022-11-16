@@ -29,3 +29,6 @@ limit_bottom = 0
 
 [node name="PickupRadius" type="CollisionShape2D" parent="MagentArea"]
 shape = SubResource( 2 )
+
+[connection signal="area_entered" from="MagentArea" to="." method="_on_MagentArea_area_entered"]
+[connection signal="area_exited" from="MagentArea" to="." method="_on_MagentArea_area_exited"]

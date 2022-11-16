@@ -37,6 +37,7 @@ func attract(area, _delta):
 	var move_vector = lerp(self.global_position, area.global_position, attractor_curve.interpolate(1/diff.length()))
 	self.position = move_vector
 
+
 func pick_up():
 	get_parent().remove_child(self)
 	GameEvents.emit_signal("item_picked_up", self)
@@ -44,6 +45,7 @@ func pick_up():
 
 func stop_collection():
 	inventory_full = true
+
 
 func start_collection():
 	inventory_full = false
