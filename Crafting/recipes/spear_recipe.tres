@@ -1,11 +1,19 @@
-[gd_resource type="Resource" load_steps=5 format=2]
+[gd_resource type="Resource" load_steps=8 format=2]
 
 [ext_resource path="res://Items/ItemResources/stone.tres" type="Resource" id=1]
 [ext_resource path="res://Items/ItemResources/stick.tres" type="Resource" id=2]
 [ext_resource path="res://Crafting/recipes/crafting_recipe.gd" type="Script" id=3]
-[ext_resource path="res://Items/ItemResources/spear.tres" type="Resource" id=4]
+[ext_resource path="res://Items/ItemResources/item_resource.gd" type="Script" id=4]
+[ext_resource path="res://Items/ItemTextures/spear.png" type="Texture" id=5]
+[ext_resource path="res://Items/ItemTextures/spear_inventory.png" type="Texture" id=6]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 4 )
+item_name = "Spear"
+texture = ExtResource( 5 )
+inventory_texture = ExtResource( 6 )
 
 [resource]
 script = ExtResource( 3 )
-item = ExtResource( 4 )
+item = SubResource( 1 )
 recipe = [ ExtResource( 2 ), ExtResource( 1 ) ]
