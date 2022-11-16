@@ -3,6 +3,7 @@ extends HBoxContainer
 export(String) onready var inventory_slot = load(inventory_slot) as PackedScene
 export var max_items = 4
 
+var inventory = []
 var item_number = 0
 
 func _ready():
@@ -20,7 +21,7 @@ func create_empty_inventory():
 func add_item_slot(item):
 	var slot = get_next_open_slot()
 	if slot:
-		item_number += 1
+		inventory.append(item)
 		slot.set_item(item)
 		if self.is_full():
 			GameEvents.emit_signal("inventory_full")
@@ -33,11 +34,11 @@ func get_next_open_slot():
 
 
 func is_full():
-	if item_number >= max_items:
+	if inventory.size() >= max_items:
 		return true
 	return false
 
 
 func remove_item(_item):
 	if _item:
-		item_number -= 1
+		inventory.erase(_item)
