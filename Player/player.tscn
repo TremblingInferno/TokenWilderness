@@ -2,9 +2,9 @@
 
 [ext_resource path="res://Player/player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/player.png" type="Texture" id=2]
-[ext_resource path="res://Items/ItemTextures/spear_inventory.png" type="Texture" id=3]
 [ext_resource path="res://Player/player_rotate.gd" type="Script" id=4]
 [ext_resource path="res://Player/weapon.gd" type="Script" id=5]
+[ext_resource path="res://Items/Weapons/ammo.tscn" type="PackedScene" id=6]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -39,8 +39,8 @@ script = ExtResource( 4 )
 [node name="Weapon" type="Sprite" parent="PlayerRotate"]
 position = Vector2( 3, 48 )
 rotation = 2.45568
-texture = ExtResource( 3 )
 script = ExtResource( 5 )
+ammo = ExtResource( 6 )
 
 [connection signal="area_entered" from="MagentArea" to="." method="_on_MagentArea_area_entered"]
 [connection signal="area_exited" from="MagentArea" to="." method="_on_MagentArea_area_exited"]

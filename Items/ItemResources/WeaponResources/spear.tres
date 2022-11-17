@@ -1,12 +1,14 @@
-[gd_resource type="Resource" load_steps=4 format=2]
+[gd_resource type="Resource" load_steps=5 format=2]
 
 [ext_resource path="res://Items/ItemResources/WeaponResources/weapon_resource.gd" type="Script" id=1]
 [ext_resource path="res://Items/ItemTextures/spear_inventory.png" type="Texture" id=2]
 [ext_resource path="res://Items/ItemTextures/spear.png" type="Texture" id=3]
+[ext_resource path="res://Items/ItemResources/AmmoResources/thrown_spear.tres" type="Resource" id=4]
 
 [resource]
 script = ExtResource( 1 )
 item_name = "Spear"
 texture = ExtResource( 3 )
 inventory_texture = ExtResource( 2 )
+ammo = ExtResource( 4 )
 damage = 10

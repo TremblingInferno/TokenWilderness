@@ -14,9 +14,9 @@ func _input(event):
 
 
 func attack():
-	ammo.instance()
-	# ammo.create
-	# ammo = weapon_resource.ammo.instance()
+	var am = ammo.instance()
+	am.init_ammo(get_global_mouse_position(), item)
+	add_child(am)
 
 
 func set_item(val):
@@ -33,4 +33,4 @@ func deselect_item():
 
 func throw_weapon():
 	if item is WeaponResource:
-		item.attack()
+		attack()
