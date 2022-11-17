@@ -7,7 +7,7 @@ func _ready():
 	GameEvents.connect("deselected_inventory", self, "deselect_item")
 
 
-func _input(event):
+func _unhandled_input(event):
 	if event is InputEventMouseButton and event.is_pressed():
 		throw_weapon()
 
