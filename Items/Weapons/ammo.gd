@@ -18,6 +18,11 @@ var change = 0
 
 func _process(delta):
 	if change >= 1:
-		queue_free()
-	change += 1 * delta
+		drop_ammo()
+	change += ammo_resource.speed * delta
 	self.position = lerp(from_position, to_position, change)
+
+
+func drop_ammo():
+	GameEvents.emit_signal("dropped_ammo", weapon_resource, self.position)
+	queue_free()

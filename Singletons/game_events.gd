@@ -5,6 +5,7 @@ signal dropped_item(item)
 signal item_removed(item)
 
 signal thrown_ammo(ammo)
+signal dropped_ammo(ammo)
 
 signal inventory_full
 signal inventory_not_full
