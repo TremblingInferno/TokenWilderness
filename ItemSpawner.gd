@@ -23,6 +23,7 @@ func respawn_object(item_resource):
 	if item_resource is SpawnableItemResource:
 		spawn_object(item_resource)
 
+
 func spawn_object(item_resource):
 	var item = pickupable_item.instance()
 	item.item_resource = item_resource

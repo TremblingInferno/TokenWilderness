@@ -15,9 +15,10 @@ func _unhandled_input(event):
 func attack():
 	GameEvents.emit_signal("item_removed", item)
 	GameEvents.emit_signal("thrown_ammo", item)
+	set_item()
 
 
-func set_item(val):
+func set_item(val = null):
 	item = val
 	if val:
 		self.texture = val.inventory_texture

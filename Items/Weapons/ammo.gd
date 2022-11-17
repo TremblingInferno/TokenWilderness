@@ -10,6 +10,7 @@ var ammo_resource:Resource
 func init_ammo(from, to, resource):
 	to_position = to
 	position = from
+	self.look_at(to_position)
 	from_position = from
 	weapon_resource = resource
 	ammo_resource = weapon_resource.ammo
