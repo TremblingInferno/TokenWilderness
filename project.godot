@@ -20,6 +20,11 @@ _global_script_classes=[ {
 "path": "res://Items/ItemResources/item_resource.gd"
 }, {
 "base": "ItemResource",
+"class": "SpawnableItemResource",
+"language": "GDScript",
+"path": "res://Items/ItemResources/SpawnableItems/spawnable_item_resource.gd"
+}, {
+"base": "ItemResource",
 "class": "WeaponResource",
 "language": "GDScript",
 "path": "res://Items/ItemResources/WeaponResources/weapon_resource.gd"
@@ -27,6 +32,7 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "Item": "",
 "ItemResource": "",
+"SpawnableItemResource": "",
 "WeaponResource": ""
 }
 

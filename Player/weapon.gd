@@ -17,6 +17,7 @@ func attack():
 	var am = ammo.instance()
 	am.init_ammo(get_global_mouse_position(), item)
 	add_child(am)
+	GameEvents.emit_signal("item_removed", item)
 
 
 func set_item(val):

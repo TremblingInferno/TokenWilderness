@@ -19,10 +19,11 @@ func spawn_objects():
 
 
 func spawn_object(item_resource):
-	var item = pickupable_item.instance()
-	item.item_resource = item_resource
-	add_child(item)
-	return item
+	if item_resource is SpawnableItemResource:
+		var item = pickupable_item.instance()
+		item.item_resource = item_resource
+		add_child(item)
+		return item
 
 
 func drop_item(item_resource):
