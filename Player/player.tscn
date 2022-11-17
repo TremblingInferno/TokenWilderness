@@ -1,11 +1,13 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Assets/player.png" type="Texture" id=1]
-[ext_resource path="res://player.gd" type="Script" id=2]
+[ext_resource path="res://Player/player.gd" type="Script" id=1]
+[ext_resource path="res://Assets/player.png" type="Texture" id=2]
+[ext_resource path="res://Items/ItemTextures/spear_inventory.png" type="Texture" id=3]
+[ext_resource path="res://Player/player_rotate.gd" type="Script" id=4]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 1 ) ],
+"frames": [ ExtResource( 2 ) ],
 "loop": true,
 "name": "New Anim",
 "speed": 5.0
@@ -17,7 +19,7 @@ radius = 1.0
 [node name="Player" type="AnimatedSprite"]
 frames = SubResource( 1 )
 animation = "New Anim"
-script = ExtResource( 2 )
+script = ExtResource( 1 )
 camera = NodePath("Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
@@ -29,6 +31,14 @@ limit_bottom = 0
 
 [node name="PickupRadius" type="CollisionShape2D" parent="MagentArea"]
 shape = SubResource( 2 )
+
+[node name="PlayerRotate" type="Node2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="Weapon" type="Sprite" parent="PlayerRotate"]
+position = Vector2( 3, 48 )
+rotation = 2.45568
+texture = ExtResource( 3 )
 
 [connection signal="area_entered" from="MagentArea" to="." method="_on_MagentArea_area_entered"]
 [connection signal="area_exited" from="MagentArea" to="." method="_on_MagentArea_area_exited"]

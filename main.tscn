@@ -7,7 +7,7 @@
 [ext_resource path="res://Items/ItemResources/stone.tres" type="Resource" id=5]
 [ext_resource path="res://Inventory/Inventory.tscn" type="PackedScene" id=6]
 [ext_resource path="res://not_scrolling.gd" type="Script" id=7]
-[ext_resource path="res://player.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Player/player.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Crafting/crafting_menu.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Items/ItemResources/stick.tres" type="Resource" id=10]
 
