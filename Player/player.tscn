@@ -34,6 +34,7 @@ shape = SubResource( 2 )
 
 [node name="PlayerRotate" type="Node2D" parent="."]
 script = ExtResource( 4 )
+held_item = NodePath("Weapon")
 
 [node name="Weapon" type="Sprite" parent="PlayerRotate"]
 position = Vector2( 3, 48 )

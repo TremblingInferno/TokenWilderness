@@ -51,5 +51,6 @@ func un_select_object():
 
 func select_object():
 	GameEvents.emit_signal("deselected_inventory")
+	GameEvents.emit_signal("selected_item", item_resource)
 	selected = true
 	item_gui.rect_scale = Vector2(1.5, 1.5)
