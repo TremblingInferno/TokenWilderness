@@ -1,7 +1,6 @@
 extends Sprite
 
 var item setget set_item
-export(PackedScene) var ammo
 
 func _ready():
 	GameEvents.connect("selected_item", self, "set_item")
@@ -14,10 +13,8 @@ func _input(event):
 
 
 func attack():
-	var am = ammo.instance()
-	am.init_ammo(get_global_mouse_position(), item)
-	add_child(am)
 	GameEvents.emit_signal("item_removed", item)
+	GameEvents.emit_signal("thrown_ammo", item)
 
 
 func set_item(val):

@@ -30,6 +30,3 @@ func drop_item(item_resource):
 	var item = spawn_object(item_resource)
 	item.position = player.position + Random2D.point_in_circle(80, 100)
 
-
-func _on_ItemSpawner_finished():
-	pass

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Assets/cave.png" type="Texture" id=1]
 [ext_resource path="res://ItemSpawner.gd" type="Script" id=2]
@@ -10,6 +10,8 @@
 [ext_resource path="res://Player/player.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Crafting/crafting_menu.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Items/ItemResources/SpawnableItems/stick.tres" type="Resource" id=10]
+[ext_resource path="res://ammo_spawner.gd" type="Script" id=11]
+[ext_resource path="res://Items/Weapons/ammo.tscn" type="PackedScene" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 89.9213, 94.3865 )
@@ -44,6 +46,11 @@ shape = SubResource( 1 )
 script = ExtResource( 2 )
 pickupable_item = ExtResource( 4 )
 spawn_items = [ ExtResource( 10 ), ExtResource( 5 ) ]
+player = NodePath("../../Player")
+
+[node name="AmmoSpawner" type="Node2D" parent="Scrolling"]
+script = ExtResource( 11 )
+ammo_object = ExtResource( 12 )
 player = NodePath("../../Player")
 
 [node name="Player" parent="." instance=ExtResource( 8 )]
