@@ -6,4 +6,4 @@
 [resource]
 script = ExtResource( 2 )
 texture = ExtResource( 1 )
-speed = 2
+speed = 300
