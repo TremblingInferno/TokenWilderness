@@ -36,6 +36,7 @@ func _on_CenterContainer_gui_input(event:InputEvent):
 
 
 func remove_item():
+	GameEvents.emit_signal("deselected_inventory")
 	GameEvents.emit_signal("inventory_not_full")
 	un_select_object()
 	full = false
